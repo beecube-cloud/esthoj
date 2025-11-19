@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 
 export default function HeroParallax() {
   const [scrollY, setScrollY] = useState(0);
+  const [loadedImages, setLoadedImages] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,29 +18,42 @@ export default function HeroParallax() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleImageLoad = (imageId: string) => {
+    setLoadedImages((prev) => new Set(prev).add(imageId));
+  };
+
   return (
     <section className="relative min-h-screen bg-[#0A1236] overflow-hidden flex items-center justify-center">
       {/* Parallax Background Images */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Top Left Image - Construction Workers - Slow parallax */}
         <div 
-          className="absolute top-32 left-[-30] w-72 h-80"
-          style={{ transform: `translateY(${scrollY * 0.15}px)` }}
+          className={`absolute top-32 left-[-30] w-72 h-80 transition-transform duration-1000 ease-out ${
+            loadedImages.has('image1') 
+              ? 'translate-x-0 opacity-100' 
+              : '-translate-x-full opacity-0'
+          }`}
+          style={{ transform: `translateY(${scrollY * 0.15}px) ${loadedImages.has('image1') ? 'translateX(0)' : 'translateX(-100%)'}` }}
         >
           <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="/assets/hero/image1.svg"
+              src="/assets/hero/image1.webp"
               alt="Construction workers"
               fill
               className="object-cover"
+              onLoad={() => handleImageLoad('image1')}
             />
           </div>
         </div>
 
         {/* Top Right Image - Meeting - Medium parallax */}
         <div 
-          className="absolute top-24 right-[-30] w-80 h-64"
-          style={{ transform: `translateY(${scrollY * 0.25}px)` }}
+          className={`absolute top-24 right-[-30] w-80 h-64 transition-transform duration-1000 ease-out delay-200 ${
+            loadedImages.has('image2') 
+              ? 'translate-x-0 opacity-100' 
+              : 'translate-x-full opacity-0'
+          }`}
+          style={{ transform: `translateY(${scrollY * 0.25}px) ${loadedImages.has('image2') ? 'translateX(0)' : 'translateX(100%)'}` }}
         >
           <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl">
             <Image
@@ -47,29 +61,39 @@ export default function HeroParallax() {
               alt="Business meeting"
               fill
               className="object-cover"
+              onLoad={() => handleImageLoad('image2')}
             />
           </div>
         </div>
 
         {/* Bottom Left Image - Office - Medium parallax */}
         <div 
-          className="absolute bottom-0 left-40 w-1/3 h-72"
-          style={{ transform: `translateY(${scrollY * -0.2}px)` }}
+          className={`absolute bottom-0 left-40 w-1/3 h-72 transition-transform duration-1000 ease-out delay-300 ${
+            loadedImages.has('image3') 
+              ? 'translate-x-0 opacity-100' 
+              : '-translate-x-full opacity-0'
+          }`}
+          style={{ transform: `translateY(${scrollY * -0.2}px) ${loadedImages.has('image3') ? 'translateX(0)' : 'translateX(-100%)'}` }}
         >
           <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="/assets/hero/image3.svg"
+              src="/assets/hero/image2.webp"
               alt="Office workspace"
               fill
               className="object-cover"
+              onLoad={() => handleImageLoad('image3')}
             />
           </div>
         </div>
 
         {/* Bottom Right Image - Engineering - Fast parallax */}
         <div 
-          className="absolute bottom-[-30] right-36 w-80 h-96"
-          style={{ transform: `translateY(${scrollY * -0.3}px)` }}
+          className={`absolute bottom-[-30] right-36 w-80 h-96 transition-transform duration-1000 ease-out delay-500 ${
+            loadedImages.has('image4') 
+              ? 'translate-x-0 opacity-100' 
+              : 'translate-x-full opacity-0'
+          }`}
+          style={{ transform: `translateY(${scrollY * -0.3}px) ${loadedImages.has('image4') ? 'translateX(0)' : 'translateX(100%)'}` }}
         >
           <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl">
             <Image
@@ -77,6 +101,7 @@ export default function HeroParallax() {
               alt="Engineering work"
               fill
               className="object-cover"
+              onLoad={() => handleImageLoad('image4')}
             />
           </div>
         </div>
