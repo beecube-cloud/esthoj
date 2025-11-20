@@ -5,15 +5,15 @@ import Image from 'next/image';
 
 const partners = [
   { id: 1, name: 'Nigerian Air Force', logo: '/partners/airforce.svg' },
-  { id: 4, name: 'Bima Shelters', logo: '/partners/Bima.png' },
-  { id: 7, name: 'Renewed Hope', logo: '/partners/renewed_hope.jpg' },
-  { id: 5, name: 'Cannon Projects', logo: '/partners/cannon.png' },
-  { id: 2, name: 'CITEC', logo: '/partners/citec.jpeg' },
+  { id: 2, name: 'Bima Shelters', logo: '/partners/Bima.png' },
+  { id: 3, name: 'Renewed Hope', logo: '/partners/renewed_hope.jpg' },
+  { id: 4, name: 'Cannon Projects', logo: '/partners/cannon.png' },
+  { id: 5, name: 'CITEC', logo: '/partners/citec.jpeg' },
   { id: 6, name: 'MTN', logo: '/partners/mtn.jpg' },
-  { id: 3, name: 'Leadership and Service', logo: '/partners/leadership_and_service.jpeg' },
-  { id: 3, name: 'First Bank', logo: '/partners/firstbank.png' },
-  { id: 4, name: 'Nigeria Sovereign Investment Authority', logo: '/partners/NSIA.png' },
-  { id: 5, name: 'Signature Realty', logo: '/partners/signature_realty.jpeg' },
+  { id: 7, name: 'Leadership and Service', logo: '/partners/leadership_and_service.jpeg' },
+  { id: 8, name: 'First Bank', logo: '/partners/firstbank.png' },
+  { id: 9, name: 'Nigeria Sovereign Investment Authority', logo: '/partners/NSIA.png' },
+  { id: 10, name: 'Signature Realty', logo: '/partners/signature_realty.jpeg' },
 ];
 
 
