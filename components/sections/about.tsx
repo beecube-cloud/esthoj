@@ -6,7 +6,6 @@ import {
   SectionHeading,
   DescriptionText,
   ChecklistItem,
-  ImageCard,
   Checklist,
   ContentSection,
   ChecklistItemHover,
@@ -54,8 +53,8 @@ export function AboutSection() {
           {/* Right Column - Image */}
           <SlideInRight>
             <ImageCardHover
-                src="/assets/about/about.svg"
-                alt="Esthoj Group team meeting"
+                src="/assets/about/imageAbout.webp"
+                alt="construction image "
             />
         </SlideInRight>
         </div>
@@ -100,7 +99,7 @@ export function AboutSectionHover() {
 
           <SlideInRight>
             <ImageCardHover
-                src="/assets/about/about.svg"
+                src="/assets/about/imageAbout.webp"
                 alt="Esthoj Group team meeting"
             />
         </SlideInRight>

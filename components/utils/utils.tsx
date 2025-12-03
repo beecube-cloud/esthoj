@@ -223,8 +223,8 @@ export function ImageCardHover({ src, alt, className = "" }: ImageCardProps) {
       <Image
         src={src}
         alt={alt}
-        width={1}
-        height={1}
+        width={200}
+        height={300}
         className="w-full h-full object-cover"
         priority
       />
