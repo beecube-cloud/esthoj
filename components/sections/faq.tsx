@@ -14,7 +14,7 @@ export function FAQSectionAnimated({
   contactText = "For assistance, please visit our",
   contactLink = "/contact",
   contactLinkText = "Contact Us",
-  phone = "(671) 555-0110",
+  phone = "+2348140989555",
   supportText = "Our dedicated team is ready to help you on your journey to a greener, more sustainable future.",
   allowMultipleOpen = false,
   animationDuration = 300,

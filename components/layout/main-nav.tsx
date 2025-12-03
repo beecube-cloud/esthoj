@@ -19,7 +19,7 @@ export default function NavbarScrollWithLogo() {
 
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'Construction', href: '/construction' },
+    { name: 'Construction', href: 'https://constructions-sable.vercel.app/' },
     { name: 'Consultancy', href: '/consultancy' },
     { name: 'Training', href: '/training' },
   ];

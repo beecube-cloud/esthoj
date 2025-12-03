@@ -36,7 +36,7 @@ export const sampleDivisions: Division[] = [
       id: 'Dr-Joshua',
       name: 'Dr Joshua Olorunkiya (PhD.)',
       role: 'CEO',
-      image: '/assets/team/DrJoshua.jpeg',
+      image: '/assets/team/drjoshua.webp',
       bio: 'Expert in sustainable development with 10+ years of experience in green energy solutions.',
       email: 'jenny.wilson@esthoj.com',
       linkedin: 'https://linkedin.com/in/jennywilson',
