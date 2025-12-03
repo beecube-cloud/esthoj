@@ -101,6 +101,7 @@ export function AboutSectionHover() {
             <ImageCardHover
                 src="/assets/about/imageAbout.webp"
                 alt="Esthoj Group team meeting"
+                
             />
         </SlideInRight>
         </div>

@@ -22,7 +22,7 @@ export function PartnersSection() {
     <section className="w-full bg-[#0A1B3D] py-16 overflow-hidden">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-12">
-          Our Global Partners
+          Our  Clients
         </h2>
         
         <div className="relative">
@@ -93,7 +93,7 @@ export function PartnersSectionWithGlow() {
     <section className="w-full bg-[#0A1B3D] py-16 overflow-hidden">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-12">
-          Our Global Partners
+        Our Clients
         </h2>
         
         <div className="relative">
@@ -151,7 +151,7 @@ export function PartnersSectionLarge() {
     <section className="w-full bg-[#0A1B3D] py-20 overflow-hidden">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16">
-          Our Global Partners
+          Our Clients
         </h2>
         
         <div className="relative">
@@ -206,7 +206,7 @@ export function PartnersSectionGrayscale() {
     <section className="w-full bg-[#0A1B3D] py-16 overflow-hidden">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-12">
-          Our Global Partners
+        Our Clients
         </h2>
         
         <div className="relative">
@@ -261,7 +261,7 @@ export function PartnersSectionFast() {
     <section className="w-full bg-[#0A1B3D] py-16 overflow-hidden">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-12">
-          Our Global Partners
+        Our Clients
         </h2>
         
         <div className="relative">
