@@ -33,26 +33,26 @@ export default function CustomizableFooter({
     {
       title: 'Platform',
       links: [
-        { name: 'Solutions', href: '/solutions' },
-        { name: 'How it works', href: '/how-it-works' },
-        { name: 'Pricing', href: '/pricing' },
+        { name: 'Solutions', href: '/#' },
+        { name: 'How it works', href: '/#' },
+        { name: 'Pricing', href: '/#' },
       ],
     },
     {
       title: 'Company',
       links: [
         { name: 'About', href: '/about' },
-        { name: 'Our Mission', href: '/mission' },
-        { name: 'Careers', href: '/careers', badge: 'HIRING' },
+        // { name: 'Our Mission', href: '/mission' },
+        { name: 'Careers', href: '#', badge: '' },
         { name: 'Contact', href: '/contact' },
       ],
     },
     {
       title: 'Resources',
       links: [
-        { name: 'Blog', href: '/blog' },
-        { name: 'Help Center', href: '/help' },
-        { name: 'Support', href: '/support' },
+        { name: 'Blog', href: '/under-construction' },
+        // { name: 'Help Center', href: '/help' },
+        // { name: 'Support', href: '/support' },
       ],
     },
   ],
@@ -99,7 +99,7 @@ export default function CustomizableFooter({
                   size="lg"
                   className="bg-red-600 hover:bg-red-700 text-white rounded-full px-8 font-semibold"
                 >
-                  <Link href={primaryButtonHref}>{primaryButtonText}</Link>
+                  <Link href='#divisions'>{primaryButtonText}</Link>
                 </Button>
                 
                 <Button

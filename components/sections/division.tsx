@@ -74,7 +74,7 @@ export function DivisionsSectionAnimated({
 
   return (
     <SectionWrapper variant="primary">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto" id="divisions">
         {/* Header */}
         <div className="mb-12">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 animate-fade-in">
@@ -111,13 +111,12 @@ export function DivisionsSectionAnimated({
                   {currentDivision.description}
                 </p>
                 
-                <Button
+                {/* <Button
                   className="bg-[#E53935] hover:bg-[#C62828] text-white px-8 py-6 text-lg rounded-full group transition-all duration-300 hover:shadow-lg hover:shadow-red-500/50"
-                  onClick={() => window.location.href = currentDivision.link}
                 >
                   Visit Division
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                </Button> */}
               </div>
 
               {/* Navigation Arrows */}
