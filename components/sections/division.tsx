@@ -36,6 +36,15 @@ export function DivisionsSectionAnimated({
   const [isAnimating, setIsAnimating] = useState(false);
   const [direction, setDirection] = useState<'left' | 'right'>('right');
 
+
+  const goToNext = () => {
+    if (isAnimating) return;
+    setDirection('right');
+    setIsAnimating(true);
+    setCurrentIndex((prev) => (prev + 1) % divisions.length);
+    setTimeout(() => setIsAnimating(false), 500);
+  };
+
   useEffect(() => {
     if (!autoPlay || divisions.length <= 1) return;
 
@@ -46,13 +55,7 @@ export function DivisionsSectionAnimated({
     return () => clearInterval(interval);
   }, [autoPlay, autoPlayInterval, currentIndex, divisions.length]);
 
-  const goToNext = () => {
-    if (isAnimating) return;
-    setDirection('right');
-    setIsAnimating(true);
-    setCurrentIndex((prev) => (prev + 1) % divisions.length);
-    setTimeout(() => setIsAnimating(false), 500);
-  };
+
 
   const goToPrevious = () => {
     if (isAnimating) return;
@@ -104,7 +107,7 @@ export function DivisionsSectionAnimated({
                 </h3>
                 
                 <p className="text-xl italic text-white/90 mb-6">
-                  "{currentDivision.tagline}"
+                  {currentDivision.tagline}
                 </p>
                 
                 <p className="text-base text-white/80 leading-relaxed mb-8">

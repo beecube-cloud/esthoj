@@ -46,7 +46,7 @@ export function AboutSection() {
               <ChecklistItem>International standards & certifications</ChecklistItem>
               <ChecklistItem>Technical excellence</ChecklistItem>
               <ChecklistItem>Customer-focused delivery</ChecklistItem>
-              <ChecklistItem>A commitment to building Nigeria's future</ChecklistItem>
+              <ChecklistItem>{`A commitment to building Nigeria's future`}</ChecklistItem>
             </Checklist>
           </div>
 
@@ -93,7 +93,7 @@ export function AboutSectionHover() {
               <ChecklistItemHover>International standards & certifications</ChecklistItemHover>
               <ChecklistItemHover>Technical excellence</ChecklistItemHover>
               <ChecklistItemHover>Customer-focused delivery</ChecklistItemHover>
-              <ChecklistItemHover>A commitment to building Nigeria's future</ChecklistItemHover>
+              <ChecklistItemHover>{`A commitment to building Nigeria's future`}</ChecklistItemHover>
             </Checklist>
           </div>
 
