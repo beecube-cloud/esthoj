@@ -19,9 +19,9 @@ export default function NavbarScrollWithLogo() {
 
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'Construction', href: 'https://constructions-sable.vercel.app/' },
-    { name: 'Consultancy', href: '/consultancy' },
-    { name: 'Training', href: '/training' },
+    { name: 'Construction', href: 'https://constructions-sable.vercel.app/', target: '_blank' }, 
+    { name: 'Consultancy', href: '/consultancy', target: '_blank' },
+    { name: 'Training', href: '/training', target: '_blank' },
   ];
 
   useEffect(() => {
@@ -63,6 +63,7 @@ export default function NavbarScrollWithLogo() {
                 key={link.name}
                 href={link.href}
                 className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium"
+                target={link.target}
               >
                 {link.name}
               </Link>

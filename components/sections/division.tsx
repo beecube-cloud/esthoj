@@ -36,6 +36,15 @@ export function DivisionsSectionAnimated({
   const [isAnimating, setIsAnimating] = useState(false);
   const [direction, setDirection] = useState<'left' | 'right'>('right');
 
+
+  const goToNext = () => {
+    if (isAnimating) return;
+    setDirection('right');
+    setIsAnimating(true);
+    setCurrentIndex((prev) => (prev + 1) % divisions.length);
+    setTimeout(() => setIsAnimating(false), 500);
+  };
+
   useEffect(() => {
     if (!autoPlay || divisions.length <= 1) return;
 
@@ -46,13 +55,7 @@ export function DivisionsSectionAnimated({
     return () => clearInterval(interval);
   }, [autoPlay, autoPlayInterval, currentIndex, divisions.length]);
 
-  const goToNext = () => {
-    if (isAnimating) return;
-    setDirection('right');
-    setIsAnimating(true);
-    setCurrentIndex((prev) => (prev + 1) % divisions.length);
-    setTimeout(() => setIsAnimating(false), 500);
-  };
+
 
   const goToPrevious = () => {
     if (isAnimating) return;
@@ -74,7 +77,7 @@ export function DivisionsSectionAnimated({
 
   return (
     <SectionWrapper variant="primary">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto" id="divisions">
         {/* Header */}
         <div className="mb-12">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 animate-fade-in">
@@ -104,20 +107,19 @@ export function DivisionsSectionAnimated({
                 </h3>
                 
                 <p className="text-xl italic text-white/90 mb-6">
-                  "{currentDivision.tagline}"
+                  {currentDivision.tagline}
                 </p>
                 
                 <p className="text-base text-white/80 leading-relaxed mb-8">
                   {currentDivision.description}
                 </p>
                 
-                <Button
+                {/* <Button
                   className="bg-[#E53935] hover:bg-[#C62828] text-white px-8 py-6 text-lg rounded-full group transition-all duration-300 hover:shadow-lg hover:shadow-red-500/50"
-                  onClick={() => window.location.href = currentDivision.link}
                 >
                   Visit Division
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                </Button> */}
               </div>
 
               {/* Navigation Arrows */}
