@@ -134,7 +134,7 @@ export default function HeroParallax() {
             size="lg"
             className="bg-red-600 hover:bg-red-700 text-white rounded-full px-8 py-6 text-base font-semibold min-w-[200px]"
           >
-            <Link href="#divisions">Explore Divisions</Link>
+            <a href="#divisions">Explore Divisions</a>
           </Button>
           
           <Button

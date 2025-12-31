@@ -102,7 +102,7 @@ export default function CustomizableFooter({
                   size="lg"
                   className="bg-red-600 hover:bg-red-700 text-white rounded-full px-8 font-semibold"
                 >
-                  <Link href='#divisions'>{primaryButtonText}</Link>
+                  <a href='#divisions'>{primaryButtonText}</a>
                 </Button>
                 
                 <Button
@@ -111,7 +111,7 @@ export default function CustomizableFooter({
                   size="lg"
                   className="border-2 border-white/30 bg-transparent text-white hover:bg-white/10 rounded-full px-8 font-semibold"
                 >
-                  <Link href={secondaryButtonHref}>{secondaryButtonText}</Link>
+                  <a href={secondaryButtonHref}>{secondaryButtonText}</a>
                 </Button>
               </div>
             )}
