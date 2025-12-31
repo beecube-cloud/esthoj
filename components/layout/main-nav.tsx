@@ -20,8 +20,8 @@ export default function NavbarScrollWithLogo() {
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'Construction', href: 'https://construction.esthoj.com', target: '_blank' }, 
-    { name: 'Consultancy', href: '/consultancy', target: '_blank' },
-    { name: 'Training', href: '/training', target: '_blank' },
+    { name: 'Consultancy', href: 'https://test-consultancy-ashy.vercel.app/', target: '_blank' },
+    // { name: 'Training', href: '/training', target: '_blank' },
   ];
 
   useEffect(() => {
