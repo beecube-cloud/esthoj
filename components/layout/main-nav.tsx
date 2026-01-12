@@ -21,7 +21,7 @@ export default function NavbarScrollWithLogo() {
     { name: 'Home', href: '/' },
     { name: 'Construction', href: 'https://construction.esthoj.com', target: '_blank' }, 
     { name: 'Consultancy', href: 'https://consultancy.esthoj.com/', target: '_blank' },
-    // { name: 'Training', href: '/training', target: '_blank' },
+    { name: 'Training', href: 'https://training.esthoj.com/', target: '_blank' },
   ];
 
   useEffect(() => {
