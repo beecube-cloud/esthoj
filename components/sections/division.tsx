@@ -124,7 +124,7 @@ export function DivisionsSectionAnimated({
 
               {/* Navigation Arrows */}
               {divisions.length > 1 && (
-                <div className="flex gap-4 mt-8">
+                <div className="flex gap-4 mt-8 items-center">
                   <button
                     onClick={goToPrevious}
                     disabled={isAnimating}
@@ -141,6 +141,19 @@ export function DivisionsSectionAnimated({
                   >
                     <ChevronRight className="h-6 w-6 text-white" />
                   </button>
+                  <Button
+                    asChild
+                    className="bg-[#E53935] hover:bg-[#C62828] text-white px-6 py-3 text-base rounded-full group transition-all duration-300 hover:shadow-lg hover:shadow-red-500/50 ml-2"
+                  >
+                    <a 
+                      href={currentDivision.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      Visit Division
+                      <ArrowRight className="ml-2 h-4 w-4 inline group-hover:translate-x-1 transition-transform" />
+                    </a>
+                  </Button>
                 </div>
               )}
             </div>

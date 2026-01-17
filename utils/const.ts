@@ -8,7 +8,7 @@ export const sampleDivisions: Division[] = [
       description:
         'We deliver end-to-end construction and engineering services across residential, commercial, industrial, and infrastructure projects. Our team transforms ideas into physical realities—safely, responsibly, and within budget.',
       image: '/assets/divisions/image1.webp',
-      link: '/divisions/engineering-construction',
+      link: 'https://construction.esthoj.com',
     },
     {
       id: 'consultancy',
@@ -17,7 +17,7 @@ export const sampleDivisions: Division[] = [
       description:
         'Our consultancy services provide expert guidance throughout the project lifecycle, from feasibility studies to project completion. We help clients make informed decisions and optimize project outcomes.',
       image: '/assets/divisions/image2.webp',
-      link: '/divisions/consultancy',
+      link: 'https://consultancy.esthoj.com',
     },
     {
       id: 'training',
@@ -26,7 +26,7 @@ export const sampleDivisions: Division[] = [
       description:
         'We offer comprehensive training programs for construction professionals, covering safety, technical skills, and project management. Our courses are designed to enhance capabilities and ensure industry best practices.',
       image: '/assets/divisions/image3.webp',
-      link: '/divisions/training',
+      link: 'https://training.esthoj.com',
     },
   ];
 
