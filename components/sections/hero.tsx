@@ -111,7 +111,7 @@ export default function HeroParallax() {
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Small Logo/Brand Text */}
         <div className="flex items-center justify-center gap-2 mb-8">
-          <Image src="/assets/hero/dot.svg" alt="Dot" width={14} height={14} />
+          <Image src="/assets/logo.svg" alt="Dot" width={14} height={14} />
           <span className="text-white text-sm font-medium tracking-wide">Esthoj Group</span>
         </div>
 
