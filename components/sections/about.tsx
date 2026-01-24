@@ -53,7 +53,7 @@ export function AboutSection() {
           {/* Right Column - Image */}
           <SlideInRight>
             <ImageCardHover
-                src="/assets/about/imageAbout.webp"
+                src="/assets/about/aboutEsthoj.webp"
                 alt="construction image "
             />
         </SlideInRight>
@@ -99,7 +99,7 @@ export function AboutSectionHover() {
 
           <SlideInRight>
             <ImageCardHover
-                src="/assets/about/imageAbout.webp"
+                src="/assets/about/aboutEsthoj.webp"
                 alt="Esthoj Group team meeting"
                 
             />
