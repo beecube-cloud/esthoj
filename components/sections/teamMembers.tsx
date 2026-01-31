@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import { TeamSectionAnimatedProps } from '@/utils/types';
@@ -9,7 +10,7 @@ import { TeamSectionAnimatedProps } from '@/utils/types';
 
 export function TeamSectionAnimated({
   members,
-  title = "Meet our Experts",
+  title = "Meet our Expert",
   subtitle = "Our team boasts top green energy experts, driving innovation in sustainability.",
   cardsPerView = 4,
   autoPlay = false,
@@ -62,7 +63,7 @@ export function TeamSectionAnimated({
   const canGoNext = currentIndex < maxIndex;
 
   return (
-    <section className={`py-16 px-4 sm:px-6 lg:px-8 bg-[#F5F5F7] ${className}`}>
+    <section id="team" className={`py-16 px-4 sm:px-6 lg:px-8 bg-[#F5F5F7] ${className}`}>
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex items-start justify-between mb-12">
@@ -115,11 +116,12 @@ export function TeamSectionAnimated({
             }}
           >
             {members.map((member, index) => (
-              <div
+              <Link
                 key={member.id}
-                className={`bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 ${
+                href={member.slug ? `/team/${member.slug}` : '#'}
+                className={`block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer ${
                   isAnimating ? 'opacity-80' : 'opacity-100'
-                }`}
+                } ${!member.slug ? 'pointer-events-none' : ''}`}
               >
                 {/* Image */}
                 <div className="relative aspect-[3/4] overflow-hidden">
@@ -136,7 +138,7 @@ export function TeamSectionAnimated({
                   <p className="text-[#03045E] font-semibold">{member.name}</p>
                   <p className="text-gray-500 text-sm">{member.role}</p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

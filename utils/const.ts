@@ -34,6 +34,7 @@ export const sampleDivisions: Division[] = [
   export const sampleTeamMembers: TeamMember[] = [
     {
       id: 'Dr-Joshua',
+      slug: 'dr-joshua-olorunkiya',
       name: 'Dr Joshua Olorunkiya (PhD.)',
       role: 'CEO',
       image: '/assets/team/drjoshua.webp',
