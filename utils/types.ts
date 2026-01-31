@@ -26,12 +26,42 @@ export interface Division {
 
   export interface TeamMember {
     id: string;
+    slug?: string;
     name: string;
     role: string;
     image: string;
     bio?: string;
     email?: string;
     linkedin?: string;
+  }
+
+  export interface EducationEntry {
+    period: string;
+    degree: string;
+    institution: string;
+    specialization?: string;
+    note?: string;
+  }
+
+  export interface TeamMemberProfile {
+    slug: string;
+    name: string;
+    role: string;
+    image: string;
+    biography: string;
+    education: EducationEntry[];
+    professionalAffiliations: string[];
+    teachingExperience?: string[];
+    interests?: string[];
+    awards?: string[];
+    publications?: {
+      journal?: string[];
+      conference?: string[];
+      poster?: string[];
+      oral?: string[];
+    };
+    trainingFacilitated?: string[];
+    seminarsAttended?: string[];
   }
   
   export interface TeamSectionAnimatedProps {
