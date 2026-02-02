@@ -10,7 +10,7 @@ import { TeamSectionAnimatedProps } from '@/utils/types';
 
 export function TeamSectionAnimated({
   members,
-  title = "Meet our Expert",
+  title = "Meet our Lead Expert",
   subtitle = "Our team boasts top green energy experts, driving innovation in sustainability.",
   cardsPerView = 4,
   autoPlay = false,
