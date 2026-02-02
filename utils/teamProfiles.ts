@@ -10,11 +10,11 @@ export const teamProfiles: Record<string, TeamMemberProfile> = {
 
 Dr. Joshua served as the Head of Quantity Surveying, Contracts Management and Project Planning in Doha, Qatar with one of the leading Multi-disciplinary Consultancy firm. During his stay in Doha, he handled Multi-billion Qatari Riyals projects including some specifically relating to the Qatar 2022 World Cup fiesta.
 
-As the Founder of Esthoj Multi-Disciplinary Group, he is responsible for overall strategic planning for the group with five subsidiaries consisting of Esthoj Multi-Disciplinary Consults which focusses on training (RC2126685); Esthoj Multi-Disciplinary Consulting Services Limited-(RC1325727); Esthoj Engineering Construction & Facility Management Limited (RC1535657).
+As the Founder of Esthoj Multi-Disciplinary Group, he is responsible for overall strategic planning for the group with three subsidiaries consisting of Esthoj Multi-Disciplinary Consults which focusses on training (RC2126685); Esthoj Multi-Disciplinary Consulting Services Limited-(RC1325727); Esthoj Engineering Construction & Facility Management Limited (RC1535657); General Quantity Surveying//Project Management Consultancy;.
 
 His in-depth knowledge and leadership skills has resulted in successful completion of several high-profile construction projects around the country. Such projects include the Multi-Billion Naira joint-venture Integrated Poultry Farm development in Panda, Nasarawa State between the Nigeria Sovereign Investment Authority (NSIA) and FarmBuilders Netherlands and UFF Agric Asset management South Africa, Park Villas Mansions, Maitama, Abuja, 200 Apartment Residential Development, Galadimawa Abuja, Federal Airport Authority Security Towers and Intruder Detection Systems at Murtala Mohammed International Airport, Lagos among others. Dr Joshua was also the brain behind the successful implementation of the Federal Government NPower project in the first term of President Buhari's administration where over 60,000 artisans were trained in skill acquisition in Six (6) construction trades across the entire states of Nigeria including the FCT.
 
-Lastly, Dr Joshua holds certifications and memberships of several International and National professional bodies such as Royal Institution of Chartered Surveyors (RICS), Chartered Institute of Building (CIOB), Chartered Institution of Civil Engineering Surveyors (CInstCES), Nigerian Institute of Quantity Surveyors (MNIQS), Nigeria Institute of Building (MNIOB), British Institute of Facility Management (BIFM), Fellow, Occupational Health and Safety Association, UK (FOSHA) among others.`,
+Lastly, Dr Joshua holds certifications and memberships of several International and National professional bodies such as Royal Institution of Chartered Surveyors (RICS), Chartered Institute of Building (CIOB), Chartered Institution of Civil Engineering Surveyors (CInstCES), Nigerian Institute of Quantity Surveyors (MNIQS), Nigeria Institute of Building (MNIOB), British Institute of Facility Management (BIFM), Fellow, Occupational Health and Safety Association, UK (OSHA) among others.`,
     education: [
       {
         period: 'Mar 2010 - Feb 2014',
@@ -52,16 +52,16 @@ Lastly, Dr Joshua holds certifications and memberships of several International 
       },
     ],
     professionalAffiliations: [
-      'Member, Chartered Institution of Civil Engineering Surveyors (MCInstCES)',
-      'Member, Association for the Advancement of Cost Engineering (MAACE)',
+      'Member, Chartered Institution of Civil Engineering Surveyors (CInstCES)',
+      'Member, Association for the Advancement of Cost Engineering (AACE)',
       'Member, Nigerian Institute of Management - Chartered (AMNIM)',
-      'Member, Nigerian Institute of Quantity Surveyors (MNIQS)',
-      'Member, Royal Institution of Chartered Surveyors (MRICS)',
+      'Member, Nigerian Institute of Quantity Surveyors (NIQS)',
+      'Member, Royal Institution of Chartered Surveyors (RICS)',
       'Associate, British Institute of Facility Management (ABIFM)',
-      'Member, Association of Cost Engineers (MACostE)',
-      'Member, Chartered Institute of Building (MCIOB)',
-      'Member, Nigerian Institute of Building (MNIOB)',
-      'Member, Society of Construction Law (MSCL)',
+      'Member, Association of Cost Engineers (ACostE)',
+      'Member, Chartered Institute of Building (CIOB)',
+      'Member, Nigerian Institute of Building (NIOB)',
+      'Member, Society of Construction Law (SCL)',
       'Chartered Construction Manager (CCM)',
       'Registered Quantity Surveyor with QSRBN',
       'Registered Builder with CORBON',
