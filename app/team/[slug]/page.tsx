@@ -27,19 +27,19 @@ export default async function TeamProfilePage({ params }: TeamProfilePageProps) 
   }
 
   const SectionTitle = ({ icon: Icon, children }: { icon: React.ElementType; children: React.ReactNode }) => (
-    <h3 className="flex items-center gap-2 text-xl font-bold text-[#1A1F4E] mb-4">
+    <h3 className="flex items-center gap-2 text-base font-bold text-[#1A1F4E] mb-4">
       <Icon className="h-5 w-5 text-[#1A1F4E]" />
       {children}
     </h3>
   );
 
   return (
-    <main className="min-h-screen bg-[#F5F5F7] pt-24 pb-20">
+    <main className="min-h-screen bg-[#F5F5F7] pt-24 pb-20 text-base">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Back link */}
         <Link
           href="/#team"
-          className="inline-flex items-center gap-2 text-[#1A1F4E] hover:text-[#03045E] font-medium mb-8 transition-colors"
+          className="inline-flex items-center gap-2 text-base text-[#1A1F4E] hover:text-[#03045E] font-medium mb-8 transition-colors"
         >
           <ArrowLeft className="h-4 w-4" />
           Back to Team
@@ -60,17 +60,17 @@ export default async function TeamProfilePage({ params }: TeamProfilePageProps) 
             </div>
           </div>
           <div className="flex-1">
-            <h1 className="text-3xl sm:text-4xl font-bold text-[#1A1F4E] mb-2">
+            <h1 className="text-base font-bold text-[#1A1F4E] mb-2">
               {profile.name}
             </h1>
-            <p className="text-lg text-[#1A1F4E]/80 font-medium mb-4">{profile.role}</p>
+            <p className="text-base text-[#1A1F4E]/80 font-medium mb-4">{profile.role}</p>
           </div>
         </div>
 
         {/* Abridged Biography */}
         <section className="bg-white rounded-2xl p-6 sm:p-8 shadow-md mb-8">
           <SectionTitle icon={BookOpen}>Abridged Biography</SectionTitle>
-          <div className="text-gray-600 leading-relaxed whitespace-pre-line">
+          <div className="text-base text-gray-600 leading-relaxed whitespace-pre-line">
             {profile.biography}
           </div>
         </section>
@@ -81,13 +81,13 @@ export default async function TeamProfilePage({ params }: TeamProfilePageProps) 
           <div className="space-y-6">
             {profile.education.map((edu, idx) => (
               <div key={idx} className="border-l-2 border-[#1A1F4E]/20 pl-4 py-2">
-                <p className="text-sm font-medium text-[#1A1F4E]/70 mb-1">{edu.period}</p>
-                <p className="font-semibold text-[#1A1F4E]">{edu.degree}, {edu.institution}</p>
+                <p className="text-base font-medium text-[#1A1F4E]/70 mb-1">{edu.period}</p>
+                <p className="text-base font-semibold text-[#1A1F4E]">{edu.degree}, {edu.institution}</p>
                 {edu.specialization && (
-                  <p className="text-gray-600 text-sm">Specialization: {edu.specialization}</p>
+                  <p className="text-base text-gray-600">Specialization: {edu.specialization}</p>
                 )}
                 {edu.note && (
-                  <p className="text-gray-600 text-sm mt-1">{edu.note}</p>
+                  <p className="text-base text-gray-600 mt-1">{edu.note}</p>
                 )}
               </div>
             ))}
@@ -97,7 +97,7 @@ export default async function TeamProfilePage({ params }: TeamProfilePageProps) 
         {/* Professional Affiliations */}
         <section className="bg-white rounded-2xl p-6 sm:p-8 shadow-md mb-8">
           <SectionTitle icon={Briefcase}>Professional Affiliations / Certifications</SectionTitle>
-          <ul className="space-y-2">
+          <ul className="space-y-2 text-base">
             {profile.professionalAffiliations.map((item, idx) => (
               <li key={idx} className="flex items-start gap-2 text-gray-600">
                 <span className="text-[#1A1F4E] mt-1.5">•</span>
@@ -111,7 +111,7 @@ export default async function TeamProfilePage({ params }: TeamProfilePageProps) 
         {profile.teachingExperience && profile.teachingExperience.length > 0 && (
           <section className="bg-white rounded-2xl p-6 sm:p-8 shadow-md mb-8">
             <SectionTitle icon={Users}>Teaching & Academic Research Experience</SectionTitle>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-base">
               {profile.teachingExperience.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2 text-gray-600">
                   <span className="text-[#1A1F4E] mt-1.5">•</span>
@@ -126,7 +126,7 @@ export default async function TeamProfilePage({ params }: TeamProfilePageProps) 
         {profile.interests && profile.interests.length > 0 && (
           <section className="bg-white rounded-2xl p-6 sm:p-8 shadow-md mb-8">
             <SectionTitle icon={Target}>Interests</SectionTitle>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-base">
               {profile.interests.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2 text-gray-600">
                   <span className="text-[#1A1F4E] mt-1.5">•</span>
@@ -141,7 +141,7 @@ export default async function TeamProfilePage({ params }: TeamProfilePageProps) 
         {profile.awards && profile.awards.length > 0 && (
           <section className="bg-white rounded-2xl p-6 sm:p-8 shadow-md mb-8">
             <SectionTitle icon={Award}>Awards</SectionTitle>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-base">
               {profile.awards.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2 text-gray-600">
                   <span className="text-[#1A1F4E] mt-1.5">•</span>
@@ -159,10 +159,10 @@ export default async function TeamProfilePage({ params }: TeamProfilePageProps) 
             <div className="space-y-6">
               {profile.publications.journal && profile.publications.journal.length > 0 && (
                 <div>
-                  <h4 className="font-semibold text-[#1A1F4E] mb-2">Journal Papers (Academic)</h4>
-                  <ul className="space-y-2">
+                  <h4 className="text-base font-semibold text-[#1A1F4E] mb-2">Journal Papers (Academic)</h4>
+                  <ul className="space-y-2 text-base">
                     {profile.publications.journal.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-gray-600 text-sm">
+                      <li key={idx} className="flex items-start gap-2 text-gray-600">
                         <span className="text-[#1A1F4E] mt-1">•</span>
                         <span>{item}</span>
                       </li>
@@ -172,10 +172,10 @@ export default async function TeamProfilePage({ params }: TeamProfilePageProps) 
               )}
               {profile.publications.conference && profile.publications.conference.length > 0 && (
                 <div>
-                  <h4 className="font-semibold text-[#1A1F4E] mb-2">Conference Papers (Peer Reviewed)</h4>
-                  <ul className="space-y-2">
+                  <h4 className="text-base font-semibold text-[#1A1F4E] mb-2">Conference Papers (Peer Reviewed)</h4>
+                  <ul className="space-y-2 text-base">
                     {profile.publications.conference.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-gray-600 text-sm">
+                      <li key={idx} className="flex items-start gap-2 text-gray-600">
                         <span className="text-[#1A1F4E] mt-1">•</span>
                         <span>{item}</span>
                       </li>
@@ -185,10 +185,10 @@ export default async function TeamProfilePage({ params }: TeamProfilePageProps) 
               )}
               {profile.publications.poster && profile.publications.poster.length > 0 && (
                 <div>
-                  <h4 className="font-semibold text-[#1A1F4E] mb-2">Poster Presentation</h4>
-                  <ul className="space-y-2">
+                  <h4 className="text-base font-semibold text-[#1A1F4E] mb-2">Poster Presentation</h4>
+                  <ul className="space-y-2 text-base">
                     {profile.publications.poster.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-gray-600 text-sm">
+                      <li key={idx} className="flex items-start gap-2 text-gray-600">
                         <span className="text-[#1A1F4E] mt-1">•</span>
                         <span>{item}</span>
                       </li>
@@ -198,10 +198,10 @@ export default async function TeamProfilePage({ params }: TeamProfilePageProps) 
               )}
               {profile.publications.oral && profile.publications.oral.length > 0 && (
                 <div>
-                  <h4 className="font-semibold text-[#1A1F4E] mb-2">Oral Presentation</h4>
-                  <ul className="space-y-2">
+                  <h4 className="text-base font-semibold text-[#1A1F4E] mb-2">Oral Presentation</h4>
+                  <ul className="space-y-2 text-base">
                     {profile.publications.oral.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-gray-600 text-sm">
+                      <li key={idx} className="flex items-start gap-2 text-gray-600">
                         <span className="text-[#1A1F4E] mt-1">•</span>
                         <span>{item}</span>
                       </li>
@@ -217,7 +217,7 @@ export default async function TeamProfilePage({ params }: TeamProfilePageProps) 
         {profile.trainingFacilitated && profile.trainingFacilitated.length > 0 && (
           <section className="bg-white rounded-2xl p-6 sm:p-8 shadow-md mb-8">
             <SectionTitle icon={Mic2}>Training and Workshop Facilitated</SectionTitle>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-base">
               {profile.trainingFacilitated.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2 text-gray-600">
                   <span className="text-[#1A1F4E] mt-1.5">•</span>
@@ -232,7 +232,7 @@ export default async function TeamProfilePage({ params }: TeamProfilePageProps) 
         {profile.seminarsAttended && profile.seminarsAttended.length > 0 && (
           <section className="bg-white rounded-2xl p-6 sm:p-8 shadow-md">
             <SectionTitle icon={BookOpen}>Seminars and Workshop Attended</SectionTitle>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-base">
               {profile.seminarsAttended.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2 text-gray-600">
                   <span className="text-[#1A1F4E] mt-1.5">•</span>
